@@ -1,0 +1,2 @@
+log_url='http://localhost:59355'
+log_session_id='280dd7bb17dc288b6239fefab2fa5b9b'
