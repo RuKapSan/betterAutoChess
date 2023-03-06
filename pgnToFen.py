@@ -37,14 +37,14 @@ class PgnToFen:
         for n in reversed((8,16,24,32,40,48,56,64)):
             emptyPosLength = 0;
             for i in self.internalChessBoard[n-8:n]:
-                if (i is not '1'):
-                    if(emptyPosLength is not 0):
+                if (i != '1'):
+                    if(emptyPosLength != 0):
                         fenpos = fenpos + str(emptyPosLength);
                         emptyPosLength = 0
                     fenpos = fenpos + i
                 else:
                     emptyPosLength = emptyPosLength + 1
-            if(emptyPosLength is not 0):
+            if(emptyPosLength != 0):
                 fenpos = fenpos + str(emptyPosLength);
             fenpos = fenpos + '/'
         fenpos = fenpos[:-1]
